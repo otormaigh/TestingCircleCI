@@ -21,4 +21,4 @@ test:
 
 general:
   artifacts:
-     -/home/ubuntu/TestingCircleCI/app/build/reports/tests/debug/index.html
+     -/home/ubuntu/TestingCircleCI/app/build/reports/tests/debug
