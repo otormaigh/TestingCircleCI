@@ -9,6 +9,7 @@ dependencies:
    - echo y | android update sdk --no-ui --all --filter "extra-google-google_play_services"
    - echo y | android update sdk --no-ui --all --filter "tool"
    - echo y | android update sdk --no-ui --all --filter "extra-android-support"
+   - echo y | android update sdk --no-ui --all --filter "platform-tools"
 
   override:
    - ./gradlew dependencies
