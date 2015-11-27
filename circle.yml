@@ -1,12 +1,8 @@
 general:
     artifacts:
-        - /home/ubuntu/TestingCircleCI/app/build/reports/tests/
+        - ~/TestingCircleCI/app/build/reports/tests/
 
 dependencies:
-  cache_directories:
-    - ~/.android
-    - ~/android
-
   pre:
    - echo y | android update sdk --no-ui --all --filter extra-android-m2repository
 
