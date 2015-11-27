@@ -4,7 +4,7 @@ machine:
 
 general:
     artifacts:
-        - /home/ubuntu/TestingCircleCI/app/build/outputs/
+        - /home/ubuntu/TestingCircleCI/app/build/reports/
 
 dependencies:
   cache_directories:
