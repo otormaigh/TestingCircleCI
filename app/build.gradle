@@ -46,9 +46,6 @@ dependencies {
         exclude module: 'support-v4'
         exclude group: 'com.parse.bolts', module: 'bolts-android'
     }
-    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
-        transitive = true;
-    }
 
     // Instrumentation test dependencies
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
