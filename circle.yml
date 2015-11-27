@@ -12,9 +12,6 @@ dependencies:
     - ~/android
 
   pre:
-   - echo y | android update sdk --no-ui --all
-   - echo y | android update sdk --no-ui --all --filter android-23
-   - echo y | android update sdk --no-ui --all --filter build-tools-23.0.2
    - echo y | android update sdk --no-ui --all --filter extra-android-m2repository
 
 test:
