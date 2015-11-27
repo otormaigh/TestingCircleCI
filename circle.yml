@@ -1,4 +1,12 @@
+machine:
+  environment:
+    ANDROID_HOME: /home/ubuntu/android
+
+
 dependencies:
+    - ~/.android
+    - ~/android
+
   pre:
    - echo y | android update sdk --no-ui --all --filter "build-tools-23.0.2"
    - echo y | android update sdk --no-ui --all --filter "extra-android-m2repository"
@@ -10,3 +18,7 @@ dependencies:
 test:
   override:
    - ./gradlew testDebugUnitTest
+
+general:
+  artifacts:
+     -/home/ubuntu/TestingCircleCI/app/build/reports/tests/debug/index.html
