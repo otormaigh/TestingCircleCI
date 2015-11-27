@@ -1,6 +1,6 @@
 general:
     artifacts:
-        - /home/ubuntu/TestingCircleCI/app/build/reports/tests/debug
+        - /home/ubuntu/TestingCircleCI/app/build/reports/tests/
 
 dependencies:
   cache_directories:
