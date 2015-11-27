@@ -1,18 +1,11 @@
-#
-# Build configuration for Circle CI
-#
-general:
-    artifacts:
-        - /home/ubuntu/your-app-name/app/build/outputs/apk/
-
 machine:
-    environment:
-        ANDROID_HOME: /usr/local/android-sdk-linux
+  environment:
+    ANDROID_HOME: /usr/local/android-sdk-linux
 
 dependencies:
-    override:
-        - ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
+  override:
+    - ./gradlew dependencies
 
 test:
-    override:
-        - ./gradlew testDebugUnitTest
+  override:
+    - ./gradlew testDebugUnitTest
