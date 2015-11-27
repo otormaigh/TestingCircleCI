@@ -1,10 +1,6 @@
-machine:
-  environment:
-    ANDROID_HOME: /usr/local/android-sdk-linux
-
 general:
     artifacts:
-        - /home/ubuntu/TestingCircleCI/app/build/reports//tests/debug
+        - /home/ubuntu/TestingCircleCI/app/build/reports/tests/debug
 
 dependencies:
   cache_directories:
