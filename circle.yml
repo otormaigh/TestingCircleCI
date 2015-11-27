@@ -5,6 +5,7 @@ general:
 dependencies:
   pre:
    - echo y | android update sdk --no-ui --all --filter extra-android-m2repository
+   - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-android-support,extra-google-google_play_services,extra-google-m2repository
 
 test:
   override:
