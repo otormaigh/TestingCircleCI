@@ -1,0 +1,21 @@
+#
+# Build configuration for Circle CI
+#
+
+general:
+    artifacts:
+        - /home/ubuntu/kitman-labs-android/app/build/outputs/apk/
+
+machine:
+    environment:
+        ANDROID_HOME: /usr/local/android-sdk-linux
+
+dependencies:
+    pre:
+        - echo y | android update sdk --no-ui --all --filter tools
+        - echo y | android update sdk --no-ui --all --filter build-tools-23.0.2
+
+test:
+    override:
+        - (./gradlew testDebugUnitTest):
+            timeout: 360
