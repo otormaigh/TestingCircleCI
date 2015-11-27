@@ -8,7 +8,6 @@ dependencies:
    - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-android-support
    - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-google_play_services
    - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter extra-google-m2repository
-   - echo y | sudo /usr/local/android-sdk-linux/tools/android update sdk --no-ui --all --filter build-tools-23.0.2
 
 test:
   override:
