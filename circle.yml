@@ -18,7 +18,3 @@ dependencies:
 test:
   override:
    - ./gradlew testDebugUnitTest
-
-general:
-  artifacts:
-     -/home/ubuntu/TestingCircleCI/app/build/reports/tests/debug
