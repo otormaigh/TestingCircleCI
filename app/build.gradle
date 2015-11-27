@@ -2,19 +2,13 @@ buildscript {
     repositories {
         maven { url 'https://maven.fabric.io/public' }
     }
-
-    dependencies {
-        classpath 'io.fabric.tools:gradle:1.+'
-    }
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
 //apply from: 'http://apps.tapadoo.com/quality/quality.gradle'
 
 repositories {
     maven { url 'https://dl.bintray.com/intercom/intercom-maven' }
-    maven { url 'https://maven.fabric.io/public' }
 }
 android {
     compileSdkVersion 23
@@ -67,9 +61,6 @@ dependencies {
         exclude module: 'play-services-analytics'
         exclude module: 'support-v4'
         exclude group: 'com.parse.bolts', module: 'bolts-android'
-    }
-    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
-        transitive = true;
     }
 
     // Instrumentation test dependencies
