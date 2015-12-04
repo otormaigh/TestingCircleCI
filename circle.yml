@@ -11,4 +11,5 @@ dependencies:
 
 test:
   override:
+   - ./gradlew clean
    - ./gradlew build
